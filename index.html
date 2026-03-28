@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gibin Krishna VT - Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-content">
+    <h2 class="logo">GIBIN<span>.</span></h2>
+    <ul class="nav-links">
+      <li onclick="scrollToSection('home')">Home</li>
+      <li onclick="scrollToSection('projects')">Projects</li>
+      <li onclick="scrollToSection('about')">About</li>
+      <li onclick="scrollToSection('skills')">Skills</li>
+      <li onclick="scrollToSection('contact')">Contact</li>
+      <li class="hire" onclick="scrollToSection('hireme')">Hire Me</li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero container">
+  <p class="intro">Hey, I'm</p>
+  <h1>Gibin Krishna VT</h1>
+  <p class="role"><span>Video Editor</span> & Creative</p>
+  <p class="bio">
+    I'm a video editor focused on storytelling, pacing, and visual impact.
+  </p>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section container">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279" />
+      <h3>Brand Reel — Luxe Watches</h3>
+      <p>Cinematic product reel</p>
+      <a href="https://youtube.com" target="_blank">Watch Video</a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728" />
+      <h3>Echoes of Silence</h3>
+      <p>Short film project</p>
+      <a href="https://youtube.com" target="_blank">Watch Video</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section container">
+  <h2>About Me</h2>
+  <p>
+    I'm a passionate video editor specializing in storytelling, motion graphics,
+    and graphic design.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section container">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>Video Editing</li>
+    <li>Motion Graphics</li>
+    <li>Graphic Design</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section container">
+  <h2>Contact</h2>
+  <p>Email: gibinkrishnavt@email.com</p>
+</section>
+
+<!-- Hire Me -->
+<section id="hireme" class="section container">
+  <h2>Hire Me</h2>
+  <p>Available for freelance work</p>
+</section>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
